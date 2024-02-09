@@ -1,0 +1,58 @@
+/*
+****************************************************
+@file:      main.c
+@breif:     print data types
+@author:    Mahmoud Mohammed Sharabas
+****************************************************
+*/
+/**********************linker section start**********************/
+#include <stdio.h>
+#include <stdlib.h>
+/**********************linker section end**********************/
+/**********************main program section start**********************/
+
+int main()
+{   unsigned char char_type=0;
+    unsigned short int  short_int_type;
+    unsigned long int  long_int_type;
+     float float_type;
+    //printing char num => 1 byte
+    printf("Enter char(number) \n");
+    scanf("%i",&char_type);
+    printf("Char(number) is %i\n", char_type);
+    printf("size of char %d bytes \n",sizeof(char_type));
+
+    //printing short int=>2 byte
+    printf("Enter short int \n");
+    scanf("%i",&short_int_type);
+    printf("short int is %i\n", short_int_type);
+    printf("size of short int %d bytes \n",sizeof(short_int_type));
+
+    //printing long int=>4 byte
+    printf("Enter long int \n");
+    scanf("%i",&long_int_type);
+    printf("long int is %i\n", long_int_type);
+    printf("size of long int %d bytes \n",sizeof(long_int_type));
+
+    //printing float
+    printf("float type int \n");
+    scanf("%f",&float_type);
+    printf("long int is %.2f \n", float_type);
+    printf("size of float %d bytes \n",sizeof(float_type));
+
+
+
+    return 0;
+}
+/**********************main program section end**********************/
+
+
+/*
+******************************************************************************
+Date              by                      task
+10/2/2024         Mahmoud Mohammed        task-004:print basic data types
+
+
+******************************************************************************
+*/
+
