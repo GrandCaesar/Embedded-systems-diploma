@@ -1,0 +1,103 @@
+/*
+****************************************************
+@file:      main.c
+@breif:     week 2 task
+@author:    Mahmoud Mohammed Sharabas
+****************************************************
+*/
+/**********************linker section start**********************/
+#include <stdio.h>
+#include <stdlib.h>
+/**********************linker section end**********************/
+/**********************main program section start**********************/
+
+int main()
+{   /*maximum number between three numbers*/
+    float number_one=0;
+    float number_two=0;
+    float number_three=0;
+    float max;
+    float first_angle;
+    float second_angle;
+    float third_angle;
+    int number;
+    char character;
+    printf("Enter first number \n");
+    scanf("%f",&number_one);
+    printf("Enter second number \n");
+    scanf("%f",&number_two);
+    printf("Enter third number \n");
+    scanf("%f",&number_three);
+
+    if(number_one>number_two)
+    {
+        if(number_one>number_three)
+        {
+            printf("first number is the largest \n");
+        }else
+        {
+            printf("third number is the largest \n");
+
+        }
+    }else
+    {
+        if(number_two>number_three)
+        {
+            printf("second number is the largest \n");
+        }else
+        {
+            printf("third number is the largest \n");
+        }
+    }
+    printf("Enter first number \n");
+    scanf("%f",&number_one);
+    printf("Enter second number \n");
+    scanf("%f",&number_two);
+    printf("Enter third number \n");
+    scanf("%f",&number_three);
+    max=(number_one>number_two)?((number_one>number_three)?number_one:number_three):((number_two>number_three)?number_two:number_three);
+    printf("the largest number is %f \n",max);
+
+    /***************check if number is divisible by 5 and 11***************/
+    printf("Enter the number \n");
+    scanf("%i",&number);
+    if(number%5==0&&number%11==0)
+    {
+        printf("The number is divisible by 11&5 \n");
+    }else
+    {
+        printf("The number is not divisible by 11&5 \n");
+
+    }
+    /***************finding the third angle in an triangle***************/
+    printf("Enter first angle \n");
+    scanf("%f",&first_angle);
+    printf("Enter second angle \n");
+    scanf("%f",&second_angle);
+    third_angle=180-(first_angle+second_angle);
+    printf("The third angle is %f \n",third_angle);
+    /***************check character if alpha or not ***************/
+
+    printf("Enter the character \n ");
+    scanf("%c ",&character);
+    if((character >= 'a' && character <= 'z') || (character >= 'A' && character <= 'Z'))
+    {
+        printf("it's character");
+    }else
+    {
+        printf("not character");
+    }
+    return 0;
+}
+/**********************main program section end**********************/
+
+
+/*
+******************************************************************************
+Date              by                      task
+16/2/2024         Mahmoud Mohammed        week 2
+
+
+******************************************************************************`
+*/
+
