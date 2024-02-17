@@ -5,10 +5,10 @@
 @author:    Mahmoud Mohammed Sharabas
 ****************************************************
 */
-/**********************linker section start**********************/
+/**********************include section start**********************/
 #include <stdio.h>
 #include <stdlib.h>
-/**********************linker section end**********************/
+/**********************include section end**********************/
 /**********************main program section start**********************/
 
 int main()
