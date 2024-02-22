@@ -1,0 +1,94 @@
+/*
+****************************************************
+@file:      main.c
+@brief:     Calculate percentage and grade
+@author:    Mahmoud Mohammed Sharabas
+****************************************************
+*/
+/**********************include section start**********************/
+#include <stdio.h>
+#include <stdlib.h>
+#include <windows.h>
+/**********************include section end**********************/
+/**********************main program section start**********************/
+
+/**********************global variables section start**********************/
+
+    float Physics, Chemistry, Biology, Mathematics, Computer, percentage ;
+    char repeat='y';
+/**********************global variables section end**********************/
+
+
+int main(){
+    while(repeat=='y')
+    {
+    printf("Enter Physics mark \n");
+    scanf("%f",&Physics);
+    printf("Enter Chemistry mark \n");
+    scanf("%f",&Chemistry);
+    printf("Enter Biology mark \n");
+    scanf("%f",&Biology);
+    printf("Enter Mathematics mark \n");
+    scanf("%f",&Mathematics);
+    printf("Enter Computer mark \n");
+    scanf("%f",&Computer);
+    percentage =(Physics+Chemistry+Biology+Mathematics+Computer)/500*100;
+    if(percentage<=100)
+    {
+
+    if(percentage>=90)
+    {
+        printf("Your grade is A \n");
+        printf("Your percentage is %.2f %%\n",percentage);
+    }else if(percentage>=80)
+    {
+        printf("Your grade is B \n");
+        printf("Your percentage is %.2f %% \n",percentage);
+    }else if(percentage>=70)
+    {
+        printf("Your grade is C \n");
+        printf("Your percentage is %.2f %% \n",percentage);
+    }else if(percentage>=60)
+    {
+        printf("Your grade is D \n");
+        printf("Your percentage is %.2f %% \n",percentage);
+    }else if(percentage>=40)
+    {
+        printf("Your grade is E \n");
+        printf("Your percentage is %.2f %% \n",percentage);
+    }else if(percentage<40)
+    {
+        printf("Your grade is F \n");
+        printf("Your percentage is %.2f %% \n",percentage);
+    }
+    }else
+    {
+        printf("Error in inputs \n");
+
+    }
+    sleep(2);
+    printf("To calculate again press 'y' please \n");
+    printf("To close press any button\n");
+    scanf(" %c",&repeat);
+    if(repeat!='y')
+    {
+        break;
+    }else
+    {
+
+    }
+    }
+    printf("Done \n");
+
+    return 0;
+}
+/**********************main program section end**********************/
+
+
+/*
+******************************************************************************
+Date              by                      task
+2/22/2024         Mahmoud Sharabas        week-006: Calculate percentage and grade
+
+******************************************************************************
+*/
