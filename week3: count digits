@@ -1,0 +1,42 @@
+/*
+****************************************************
+@file:      main.c
+@brief:     count digits
+@author:    Mahmoud Mohammed Sharabas
+****************************************************
+*/
+/**********************include section start**********************/
+#include <stdio.h>
+#include <stdlib.h>
+/**********************include section end**********************/
+
+
+/**********************global variables section start**********************/
+
+   unsigned char counter;
+   unsigned  long int number_one;
+/**********************global variables section end**********************/
+/**********************main program section start**********************/
+
+
+int main(){
+    printf("Enter the number \n");
+    scanf(" %i",&number_one);
+    while(number_one!=0)
+    {
+        number_one= number_one/10;
+        counter++;
+    }
+    printf("Number of digits is %i \n",counter);
+
+    return 0;
+}
+/**********************main program section end**********************/
+
+
+/*
+******************************************************************************
+Date              by                      task
+2/23/2024         Mahmoud Sharabas        week3-006.6: count digits
+******************************************************************************
+*/
