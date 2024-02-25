@@ -1,0 +1,59 @@
+
+/*
+****************************************************
+@file:      main.c
+@brief:     pyramid of *
+@author:    Mahmoud Mohammed Sharabas
+****************************************************
+*/
+/**********************include section start**********************/
+#include <stdio.h>
+#include <stdlib.h>
+/**********************include section end**********************/
+
+
+/**********************global variables section start**********************/
+unsigned int space_counter, star_counter,rows_counter;
+
+/**********************global variables section end**********************/
+/**********************main program section start**********************/
+/*
+    *
+   ***
+  *****
+ *******
+*********
+*/
+
+int main()
+
+{
+    int rows=5;
+    for(rows_counter=1;rows_counter<=rows ;rows_counter++)
+    {
+        for(space_counter=1;space_counter<=rows-rows_counter;space_counter++)
+        {
+            printf(" ");
+        }
+        for(star_counter=1;star_counter<=2*rows_counter-1;star_counter++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+
+
+
+
+
+    return 0;
+}
+/**********************main program section end**********************/
+
+
+/*
+******************************************************************************
+Date              by                      task
+2/23/2024         Mahmoud Sharabas        week3-006.10: pyramid of *
+******************************************************************************
+*/
