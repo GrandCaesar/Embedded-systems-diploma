@@ -1,0 +1,41 @@
+/*
+****************************************************
+@file:      main.c
+@brief:     print from 1 to n
+@author:    Mahmoud Mohammed Sharabas
+****************************************************
+*/
+/**********************include section start**********************/
+#include <stdio.h>
+#include <stdlib.h>
+/**********************include section end**********************/
+
+
+/**********************global variables section start**********************/
+unsigned int counter, final_val;
+
+/**********************global variables section end**********************/
+/**********************main program section start**********************/
+
+
+int main(){
+    printf("Enter the final value \n");
+    scanf(" %i",&final_val);
+    for(counter=1; counter<=final_val;counter++)
+    {
+        printf("%i \n",counter);
+    }
+
+
+
+    return 0;
+}
+/**********************main program section end**********************/
+
+
+/*
+******************************************************************************
+Date              by                      task
+2/23/2024         Mahmoud Sharabas        week3-006.8: print from 1 to n
+******************************************************************************
+*/
