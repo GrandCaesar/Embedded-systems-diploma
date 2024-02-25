@@ -1,0 +1,59 @@
+/*
+****************************************************
+@file:      main.c
+@brief:     print day of week using switch
+@author:    Mahmoud Mohammed Sharabas
+****************************************************
+*/
+/**********************include section start**********************/
+#include <stdio.h>
+#include <stdlib.h>
+/**********************include section end**********************/
+
+
+/**********************global variables section start**********************/
+
+   unsigned char day_number;
+/**********************global variables section end**********************/
+/**********************main program section start**********************/
+
+
+int main(){
+    printf("Enter day number \n");
+    scanf(" %i",&day_number);
+    switch(day_number)
+    {
+        case 1: printf("It's Sunday \n");
+            break;
+        case 2: printf("It's Monday \n");
+            break;
+        case 3: printf("It's Tuesday \n");
+            break;
+        case 4: printf("It's wendesday \n");
+            break;
+        case 5: printf("It's Thrusday \n");
+            break;
+        case 6: printf("It's Friday \n");
+            break;
+        case 7: printf("It's Saturday \n");
+            break;
+        default : printf("Wrong input \n");
+            break;
+
+
+
+    }
+
+
+    return 0;
+}
+/**********************main program section end**********************/
+
+
+/*
+******************************************************************************
+Date              by                      task
+2/22/2024         Mahmoud Sharabas        week3-006.2: print day of week using switch
+
+******************************************************************************
+*/
