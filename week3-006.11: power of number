@@ -1,0 +1,56 @@
+
+/*
+****************************************************
+@file:      main.c
+@brief:     power of number
+@author:    Mahmoud Mohammed Sharabas
+****************************************************
+*/
+/**********************include section start**********************/
+#include <stdio.h>
+#include <stdlib.h>
+/**********************include section end**********************/
+
+
+/**********************global variables section start**********************/
+unsigned int base, counter, number_power,result=1 ;
+
+/**********************global variables section end**********************/
+/**********************main program section start**********************/
+
+int main()
+
+{
+   printf("Enter the base  \n");
+   scanf(" %i",&base);
+   printf("Enter the power  \n");
+   scanf(" %i",&number_power);
+   power(number_power,base);
+
+
+    return 0;
+}
+/**********************main program section end**********************/
+
+/**********************sub program section start**********************/
+void power(number_power,base)
+{
+    for(counter=1;counter<=number_power;counter++)
+    {
+        result=result*base;
+    }
+    printf("the result is %i",result);
+
+}
+
+
+/**********************sub program section end**********************/
+
+
+
+/*
+******************************************************************************
+Date              by                      task
+2/23/2024         Mahmoud Sharabas        week3-006.11: power of number
+******************************************************************************
+*/
