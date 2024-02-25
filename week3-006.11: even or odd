@@ -1,0 +1,57 @@
+
+/*
+****************************************************
+@file:      main.c
+@brief:     even or odd
+@author:    Mahmoud Mohammed Sharabas
+****************************************************
+*/
+/**********************include section start**********************/
+#include <stdio.h>
+#include <stdlib.h>
+/**********************include section end**********************/
+
+
+/**********************global variables section start**********************/
+unsigned int number_one ;
+
+/**********************global variables section end**********************/
+/**********************main program section start**********************/
+
+int main()
+
+{
+   printf("Enter number  \n");
+   scanf(" %i",&number_one);
+   check(number_one);
+
+
+    return 0;
+}
+/**********************main program section end**********************/
+
+/**********************sub program section start**********************/
+void check(number_one)
+{
+    if(number_one%2==0)
+    {
+        printf("The number is even \n");
+    }else
+    {
+        printf("The number is odd \n");
+
+    }
+
+}
+
+
+/**********************sub program section end**********************/
+
+
+
+/*
+******************************************************************************
+Date              by                      task
+2/23/2024         Mahmoud Sharabas        week3-006.11: even or odd
+******************************************************************************
+*/
