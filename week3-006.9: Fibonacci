@@ -1,0 +1,46 @@
+
+/*
+****************************************************
+@file:      main.c
+@brief:     Fibonacci
+@author:    Mahmoud Mohammed Sharabas
+****************************************************
+*/
+/**********************include section start**********************/
+#include <stdio.h>
+#include <stdlib.h>
+/**********************include section end**********************/
+
+
+/**********************global variables section start**********************/
+unsigned int counter, number_one, number_two=1,final_val,result;
+
+/**********************global variables section end**********************/
+/**********************main program section start**********************/
+
+
+int main()
+{
+    printf("Enter number of terms \n");
+    scanf(" %i",&final_val);
+    for(counter=1; counter<=final_val; counter++)
+    {
+        printf("%i ",number_one);
+        result=number_one+number_two;
+        number_one= number_two;
+        number_two=result;
+
+    }
+
+
+    return 0;
+}
+/**********************main program section end**********************/
+
+
+/*
+******************************************************************************
+Date              by                      task
+2/23/2024         Mahmoud Sharabas        week3-006.9: Fibonacci
+******************************************************************************
+*/
