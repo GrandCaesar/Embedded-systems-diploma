@@ -1,0 +1,60 @@
+/*
+****************************************************
+@file:      main.c
+@brief:     check vowel letters
+@author:    Mahmoud Mohammed Sharabas
+****************************************************
+*/
+/**********************include section start**********************/
+#include <stdio.h>
+#include <stdlib.h>
+/**********************include section end**********************/
+
+
+/**********************global variables section start**********************/
+
+   unsigned char letter;
+/**********************global variables section end**********************/
+/**********************main program section start**********************/
+
+
+int main(){
+    printf("Enter the letter \n");
+    scanf(" %c",&letter);
+    switch(letter)
+    {
+        case 'a': printf("It's vowel \n");
+            break;
+        case 'e': printf("It's vowel \n");
+            break;
+        case 'i': printf("It's vowel \n");
+            break;
+        case 'o': printf("It's vowel \n");
+            break;
+        case 'u': printf("It's vowel \n");
+            break;
+        case 'A': printf("It's vowel \n");
+            break;
+        case 'E': printf("It's vowel \n");
+            break;
+        case 'O': printf("It's vowel \n");
+            break;
+        case 'I': printf("It's vowel \n");
+            break;
+        case 'U': printf("It's vowel \n");
+            break;
+        default : printf("It's constant \n");
+            break;
+    }
+
+    return 0;
+}
+/**********************main program section end**********************/
+
+
+/*
+******************************************************************************
+Date              by                      task
+2/23/2024         Mahmoud Sharabas        week3-006.4: check vowel letters
+******************************************************************************
+*/
