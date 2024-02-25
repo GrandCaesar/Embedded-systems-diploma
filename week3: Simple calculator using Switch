@@ -1,0 +1,64 @@
+/*
+****************************************************
+@file:      main.c
+@brief:     Simple calculator using Switch
+@author:    Mahmoud Mohammed Sharabas
+****************************************************
+*/
+/**********************include section start**********************/
+#include <stdio.h>
+#include <stdlib.h>
+/**********************include section end**********************/
+
+
+/**********************global variables section start**********************/
+
+   unsigned char operator_type;
+   float number_one, number_two, result;
+/**********************global variables section end**********************/
+/**********************main program section start**********************/
+
+
+int main(){
+
+    printf("Enter the operator \n");
+    scanf(" %c",&operator_type);
+    printf("Enter the first number \n");
+    scanf(" %f",&number_one);
+    printf("Enter the second number \n");
+    scanf(" %f",&number_two);
+
+    switch(operator_type)
+    {
+        case '+':
+        result= number_one+ number_two;
+        printf("The result is %.2f \n",result);
+            break;
+        case '-':
+        result= number_one- number_two;
+        printf("The result is %.2f \n",result);
+            break;
+        case '*':
+        result= number_one* number_two;
+        printf("The result is %.2f \n",result);
+            break;
+        case '/':
+        result= number_one/ number_two;
+        printf("The result is %.2f \n",result);
+            break;
+        default: printf("Wrong input \n");
+
+    }
+
+    return 0;
+}
+/**********************main program section end**********************/
+
+
+/*
+******************************************************************************
+Date              by                      task
+2/23/2024         Mahmoud Sharabas        week3-006.3: Simple calculator using Switch
+
+******************************************************************************
+*/
