@@ -1,0 +1,38 @@
+/*
+****************************************************
+@file:      main.c
+@brief:     print even from 1 to 100 using while loop
+@author:    Mahmoud Mohammed Sharabas
+****************************************************
+*/
+/**********************include section start**********************/
+#include <stdio.h>
+#include <stdlib.h>
+/**********************include section end**********************/
+
+
+/**********************global variables section start**********************/
+
+   unsigned char counter;
+/**********************global variables section end**********************/
+/**********************main program section start**********************/
+
+
+int main(){
+    while(counter<=100)
+    {
+        printf("%i \n",counter);
+        counter+=2;
+    }
+
+    return 0;
+}
+/**********************main program section end**********************/
+
+
+/*
+******************************************************************************
+Date              by                      task
+2/23/2024         Mahmoud Sharabas        week3-006.5: print even from 1 to 100
+******************************************************************************
+*/
