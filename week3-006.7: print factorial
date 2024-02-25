@@ -1,0 +1,48 @@
+/*
+****************************************************
+@file:      main.c
+@brief:     print factorial
+@author:    Mahmoud Mohammed Sharabas
+****************************************************
+*/
+/**********************include section start**********************/
+#include <stdio.h>
+#include <stdlib.h>
+/**********************include section end**********************/
+
+
+/**********************global variables section start**********************/
+
+   unsigned int number_one,factorial=1 ;
+   unsigned char counter;
+/**********************global variables section end**********************/
+/**********************main program section start**********************/
+
+
+int main(){
+   printf("Enter the number \n");
+   scanf(" %i",&number_one);
+   if(number_one!=0)
+   {
+    for(counter=1;counter<=number_one;counter++)
+       {
+        factorial=counter*factorial;
+       }
+    printf("The factorial of %i is %i \n", number_one, factorial);
+
+   }else
+   {
+       printf("Factorial of 0 is 1 \n");
+   }
+
+    return 0;
+}
+/**********************main program section end**********************/
+
+
+/*
+******************************************************************************
+Date              by                      task
+2/23/2024         Mahmoud Sharabas        week3-006.7: print factorial
+******************************************************************************
+*/
